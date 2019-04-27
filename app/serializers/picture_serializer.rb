@@ -1,7 +1,11 @@
-class PictureSerializer < ActiveModel::PictureSerializer
-	arributes :id, :name, :image_url
+class PictureSerializer < ActiveModel::Serializer
+	attributes :id, :nome, :imagem
 
-	def image_url
-		ser.object.image_url
+	def nome
+		self.object.name		
+	end
+
+	def imagem
+		self.object.image_url
 	end
 end
