@@ -9,12 +9,12 @@ default: &default
 
 development:
   <<: *default
-  database: aula2_dev
+  database: aulapos2_dev
 
 test:
   <<: *default
-  database: aula2_test
+  database: aulapos2_test
 
 production:
   <<: *default
-  database: aula2_prod
+  database: aulapos2_prod
